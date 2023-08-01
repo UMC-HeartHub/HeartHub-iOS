@@ -33,7 +33,8 @@
 		0CC33AC62A5281C1001EF4E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC33AC52A5281C1001EF4E7 /* ViewController.swift */; };
 		0CC33ACB2A5281C3001EF4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC33ACA2A5281C3001EF4E7 /* Assets.xcassets */; };
 		0CC33ACE2A5281C3001EF4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC33ACC2A5281C3001EF4E7 /* LaunchScreen.storyboard */; };
-
+		0CF732452A65653500ED3B01 /* CommunityCellPagingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF732442A65653500ED3B01 /* CommunityCellPagingImageView.swift */; };
+		56078E1E2A78FFCC009AEDB7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E1D2A78FFCC009AEDB7 /* ProfileViewController.swift */; };
 		561462192A6EE50300C0AC1F /* FindIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561462182A6EE50300C0AC1F /* FindIdViewController.swift */; };
 		5626B2D12A57EEB300477EBC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626B2D02A57EEB300477EBC /* LoginViewController.swift */; };
 		5626B3372A584A3D00477EBC /* SignUpStartDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626B3362A584A3D00477EBC /* SignUpStartDateViewController.swift */; };
@@ -55,9 +56,6 @@
 		569E4EFE2A5FC58200B51898 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 569E4EFC2A5FC58200B51898 /* Pretendard-Regular.otf */; };
 		569E4EFF2A5FC58200B51898 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 569E4EFD2A5FC58200B51898 /* Pretendard-SemiBold.otf */; };
 		CBCF5AADCFBAC5FAE8CF899C /* Pods_HeartHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D54B5963AADEBA830899999 /* Pods_HeartHub.framework */; };
-
-		0CF732452A65653500ED3B01 /* CommunityCellPagingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF732442A65653500ED3B01 /* CommunityCellPagingImageView.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,9 +87,10 @@
 		0CC33ACA2A5281C3001EF4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC33ACD2A5281C3001EF4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC33ACF2A5281C3001EF4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
+		0CF732442A65653500ED3B01 /* CommunityCellPagingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommunityCellPagingImageView.swift; path = HeartHub/CommunityScene/View/CommunityCellPagingImageView/CommunityCellPagingImageView.swift; sourceTree = SOURCE_ROOT; };
 		15B862B20CFD240D7E3F016F /* Pods-HeartHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartHub.debug.xcconfig"; path = "Target Support Files/Pods-HeartHub/Pods-HeartHub.debug.xcconfig"; sourceTree = "<group>"; };
 		1D54B5963AADEBA830899999 /* Pods_HeartHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56078E1D2A78FFCC009AEDB7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		561462182A6EE50300C0AC1F /* FindIdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindIdViewController.swift; sourceTree = "<group>"; };
 		5626B2D02A57EEB300477EBC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5626B3362A584A3D00477EBC /* SignUpStartDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStartDateViewController.swift; sourceTree = "<group>"; };
@@ -113,9 +112,6 @@
 		569E4EFC2A5FC58200B51898 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		569E4EFD2A5FC58200B51898 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		9B22F018AA19302771485F16 /* Pods-HeartHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartHub.release.xcconfig"; path = "Target Support Files/Pods-HeartHub/Pods-HeartHub.release.xcconfig"; sourceTree = "<group>"; };
-
-		0CF732442A65653500ED3B01 /* CommunityCellPagingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommunityCellPagingImageView.swift; path = HeartHub/CommunityScene/View/CommunityCellPagingImageView/CommunityCellPagingImageView.swift; sourceTree = SOURCE_ROOT; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,14 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-
 		07263ABD750EA948E9BD0F4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				1D54B5963AADEBA830899999 /* Pods_HeartHub.framework */,
 			);
 			name = Frameworks;
-};
+			sourceTree = "<unknown>";
+		};
 		0C382E242A5950AF00EA08E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,7 +297,6 @@
 				0CB49BD92A69234A00C77341 /* LookViewController.swift */,
 			);
 			path = Controller;
-
 			sourceTree = "<group>";
 		};
 		0CC33AB52A5281C1001EF4E7 = {
@@ -325,13 +320,11 @@
 		0CC33AC02A5281C1001EF4E7 /* HeartHub */ = {
 			isa = PBXGroup;
 			children = (
-
+				56078E172A78FC73009AEDB7 /* ProfileScene */,
 				561462142A6EE3DF00C0AC1F /* LoginScene */,
 				56348A8D2A6DB4CE005BB635 /* SignUpScene */,
 				0CC33AC52A5281C1001EF4E7 /* ViewController.swift */,
-
 				0C809A1C2A56D17F009EC362 /* CommunityScene */,
-
 				0CC33AC12A5281C1001EF4E7 /* AppDelegate.swift */,
 				0CC33AC32A5281C1001EF4E7 /* SceneDelegate.swift */,
 				0CC33ACA2A5281C3001EF4E7 /* Assets.xcassets */,
@@ -340,6 +333,38 @@
 				0CC33ACF2A5281C3001EF4E7 /* Info.plist */,
 			);
 			path = HeartHub;
+			sourceTree = "<group>";
+		};
+		56078E172A78FC73009AEDB7 /* ProfileScene */ = {
+			isa = PBXGroup;
+			children = (
+				56078E1A2A78FCA2009AEDB7 /* Models */,
+				56078E192A78FC9E009AEDB7 /* Views */,
+				56078E182A78FC98009AEDB7 /* Controllers */,
+			);
+			path = ProfileScene;
+			sourceTree = "<group>";
+		};
+		56078E182A78FC98009AEDB7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56078E1D2A78FFCC009AEDB7 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56078E192A78FC9E009AEDB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56078E1A2A78FCA2009AEDB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		561462142A6EE3DF00C0AC1F /* LoginScene */ = {
@@ -555,7 +580,6 @@
 				0CB49BDC2A69237400C77341 /* MockData.swift in Sources */,
 				0C4D32F72A6823A600AD5EFF /* DailyDateNoImageCell.swift in Sources */,
 				0CC33AC22A5281C1001EF4E7 /* AppDelegate.swift in Sources */,
-
 				56348A932A6E841E005BB635 /* FindPwPopUpView.swift in Sources */,
 				569E4EED2A5D499900B51898 /* SignUpTermAgreeView.swift in Sources */,
 				0CC33AC42A5281C1001EF4E7 /* SceneDelegate.swift in Sources */,
@@ -572,7 +596,6 @@
 				569E4EDB2A5C241B00B51898 /* LoginView.swift in Sources */,
 				56348A692A6319EA005BB635 /* FindIdPopUpViewController.swift in Sources */,
 				569E4EE62A5D06C400B51898 /* SignUpProfileView.swift in Sources */,
-
 				0C809A1E2A56DA57009EC362 /* DailyDateViewController.swift in Sources */,
 				0C43F6152A66767700EED860 /* DailyDateImageCell.swift in Sources */,
 				0C592A012A6D69AF00C21570 /* PanModalTransitioningDelegate.swift in Sources */,
@@ -584,9 +607,9 @@
 				0C4D32FF2A68315B00AD5EFF /* CommunityCellProfileViewDelegate.swift in Sources */,
 				0C43F6102A659C6D00EED860 /* PagingImageCollectionViewCell.swift in Sources */,
 				0C5929FE2A6D481400C21570 /* BlurView.swift in Sources */,
+				56078E1E2A78FFCC009AEDB7 /* ProfileViewController.swift in Sources */,
 				0C5929F52A6ADB4500C21570 /* CommunityFloatingButton.swift in Sources */,
 				0C382E312A5BDB6D00EA08E0 /* CommunityCellProfileView.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
