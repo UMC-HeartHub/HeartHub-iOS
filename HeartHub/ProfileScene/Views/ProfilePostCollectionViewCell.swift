@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfilePostImageCollectionViewCell: UICollectionViewCell {
+class ProfilePostCollectionViewCell: UICollectionViewCell {
 
     let postImageView: UIImageView = {
         let image = UIImageView()
@@ -17,6 +17,8 @@ class ProfilePostImageCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configureImageView()
+        setConstraints()
     }
     
     required init?(coder: NSCoder) {

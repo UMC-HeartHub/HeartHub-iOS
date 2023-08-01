@@ -14,6 +14,9 @@ class ProfileViewController: UIViewController {
         collectionViewLayout: generateCollectionViewLayout()
     )
     
+    private var profilePostArray: [ProfilePost] = []
+    private var postDataManager = ProfilePostDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUserPostCollectionView()
@@ -26,11 +29,20 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return profilePostArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "PostCell",
+            for: indexPath)
+                as? ProfilePostCollectionViewCell else {
+            return UICollectionViewCell()
+                }
+        
+        cell.postImageView.image = profilePostArray[indexPath.item].postImage
+        
+        return cell
     }
 }
 
@@ -39,6 +51,10 @@ extension ProfileViewController: UICollectionViewDataSource {
 extension ProfileViewController {
     private func configureUserPostCollectionView() {
         userPostCollectionView.dataSource = self
+        userPostCollectionView.register(ProfilePostCollectionViewCell.self, forCellWithReuseIdentifier: "PostCell")
+        
+        postDataManager.configureEnterProfilePostImageData()
+        profilePostArray = postDataManager.getEnterProfilePostImageData()
     }
         
     private func generateCollectionViewLayout() -> UICollectionViewCompositionalLayout {
@@ -76,7 +92,7 @@ extension ProfileViewController {
     private func configureLayout() {
         NSLayoutConstraint.activate([
             // MARK: userPostCollectionView Constraints
-            userPostCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
+            userPostCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 300),
             userPostCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
             userPostCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             userPostCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
