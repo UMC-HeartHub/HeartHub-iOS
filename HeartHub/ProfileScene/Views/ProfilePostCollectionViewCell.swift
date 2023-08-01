@@ -1,5 +1,5 @@
 //
-//  ProfilePostImageCollectionViewCell.swift
+//  ProfilePostCollectionViewCell.swift
 //  HeartHub
 //
 //  Created by 제민우 on 2023/08/01.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ProfilePostCollectionViewCell: UICollectionViewCell {
+final class ProfilePostCollectionViewCell: UICollectionViewCell {
 
-    let postImageView: UIImageView = {
+    var postImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
         return image
@@ -18,7 +18,7 @@ class ProfilePostCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureImageView()
-        setConstraints()
+        configureConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -29,7 +29,7 @@ class ProfilePostCollectionViewCell: UICollectionViewCell {
         self.contentView.addSubview(postImageView)
     }
     
-    func setConstraints() {
+    func configureConstraints() {
         postImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             postImageView.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),

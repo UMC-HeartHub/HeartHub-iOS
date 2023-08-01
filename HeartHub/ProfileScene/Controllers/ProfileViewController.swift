@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+final class ProfileViewController: UIViewController {
 
     private lazy var userPostCollectionView = UICollectionView(
         frame: .zero,
@@ -25,7 +25,7 @@ class ProfileViewController: UIViewController {
     }
 }
 
-// MARK: EnterProfileViewController DataSource Implementation
+// MARK: ProfileViewController DataSource Implementation
 extension ProfileViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,8 +53,8 @@ extension ProfileViewController {
         userPostCollectionView.dataSource = self
         userPostCollectionView.register(ProfilePostCollectionViewCell.self, forCellWithReuseIdentifier: "PostCell")
         
-        postDataManager.configureEnterProfilePostImageData()
-        profilePostArray = postDataManager.getEnterProfilePostImageData()
+        postDataManager.configureProfilePostData()
+        profilePostArray = postDataManager.fetchProfilePostData()
     }
         
     private func generateCollectionViewLayout() -> UICollectionViewCompositionalLayout {

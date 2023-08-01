@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ProfilePostDataManager {
+final class ProfilePostDataManager {
     private var postDataArray: [ProfilePost] = []
     
-    func configureEnterProfilePostImageData() {
+    func configureProfilePostData() {
         postDataArray = [
             ProfilePost(postImage: UIImage(named: "HeartIcon3:3")),
             ProfilePost(postImage: UIImage(named: "HeartIcon2:3")),
@@ -23,7 +23,7 @@ class ProfilePostDataManager {
         ]
     }
     
-    func getEnterProfilePostImageData() -> [ProfilePost] {
+    func fetchProfilePostData() -> [ProfilePost] {
         return postDataArray
         
     }
