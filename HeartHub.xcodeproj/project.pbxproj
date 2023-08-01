@@ -37,6 +37,7 @@
 		56078E1E2A78FFCC009AEDB7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E1D2A78FFCC009AEDB7 /* ProfileViewController.swift */; };
 		56078E222A790369009AEDB7 /* ProfilePostImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E212A790369009AEDB7 /* ProfilePostImageCollectionViewCell.swift */; };
 		56078E242A79058C009AEDB7 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E232A79058C009AEDB7 /* MockData.swift */; };
+		56078E262A79064C009AEDB7 /* ProfilePostDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E252A79064C009AEDB7 /* ProfilePostDataManager.swift */; };
 		561462192A6EE50300C0AC1F /* FindIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561462182A6EE50300C0AC1F /* FindIdViewController.swift */; };
 		5626B2D12A57EEB300477EBC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626B2D02A57EEB300477EBC /* LoginViewController.swift */; };
 		5626B3372A584A3D00477EBC /* SignUpStartDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626B3362A584A3D00477EBC /* SignUpStartDateViewController.swift */; };
@@ -95,6 +96,7 @@
 		56078E1D2A78FFCC009AEDB7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		56078E212A790369009AEDB7 /* ProfilePostImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		56078E232A79058C009AEDB7 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		56078E252A79064C009AEDB7 /* ProfilePostDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostDataManager.swift; sourceTree = "<group>"; };
 		561462182A6EE50300C0AC1F /* FindIdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindIdViewController.swift; sourceTree = "<group>"; };
 		5626B2D02A57EEB300477EBC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5626B3362A584A3D00477EBC /* SignUpStartDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStartDateViewController.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				56078E232A79058C009AEDB7 /* MockData.swift */,
+				56078E252A79064C009AEDB7 /* ProfilePostDataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				56348A932A6E841E005BB635 /* FindPwPopUpView.swift in Sources */,
 				569E4EED2A5D499900B51898 /* SignUpTermAgreeView.swift in Sources */,
 				0CC33AC42A5281C1001EF4E7 /* SceneDelegate.swift in Sources */,
+				56078E262A79064C009AEDB7 /* ProfilePostDataManager.swift in Sources */,
 				569E4EEB2A5D40E800B51898 /* SignUpLoverLinkingView.swift in Sources */,
 				56348A632A631283005BB635 /* FindIdView.swift in Sources */,
 				5626B3372A584A3D00477EBC /* SignUpStartDateViewController.swift in Sources */,

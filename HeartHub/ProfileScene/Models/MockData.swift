@@ -9,7 +9,7 @@ import UIKit
 
 struct ProfilePost {
     var postImage: UIImage?
-    var postText: String
+    var postText: String?
 }
 
 
