@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct ProfilePost {
+struct ProfilePostDataModel {
     var postImage: UIImage?
     var postText: String?
 }

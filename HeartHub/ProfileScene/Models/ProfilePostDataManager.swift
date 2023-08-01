@@ -8,22 +8,22 @@
 import UIKit
 
 final class ProfilePostDataManager {
-    private var postDataArray: [ProfilePost] = []
+    private var postDataArray: [ProfilePostDataModel] = []
     
     func configureProfilePostData() {
         postDataArray = [
-            ProfilePost(postImage: UIImage(named: "HeartIcon3:3")),
-            ProfilePost(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePost(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePost(postImage: UIImage(named: "HeartIcon1:3")),
-            ProfilePost(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePost(postImage: UIImage(named: "HeartIcon3:3")),
-            ProfilePost(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePost(postImage: UIImage(named: "HeartIcon1:3"))
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon3:3")),
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon1:3")),
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon3:3")),
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
+            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon1:3"))
         ]
     }
     
-    func fetchProfilePostData() -> [ProfilePost] {
+    func fetchProfilePostData() -> [ProfilePostDataModel] {
         return postDataArray
         
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileUserView: UIView {
+final class ProfileUserView: UIView {
 
     lazy var imageShadowView: UIView = {
         let view = UIView()
@@ -31,7 +31,7 @@ class ProfileUserView: UIView {
     var profileNickNameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = UIFont.init(name: "PretendardSemiBold", size: 20)
+        label.font = UIFont.init(name: "Pretendard-SemiBold", size: 20)
         label.textAlignment = .center
         label.adjustsFontForContentSizeCategory = true
         return label
@@ -40,7 +40,7 @@ class ProfileUserView: UIView {
     var profileInformationLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = UIFont.init(name: "PretendardRegular", size: 16)
+        label.font = UIFont.init(name: "Pretendard-Regular", size: 16)
         label.textAlignment = .center
         label.adjustsFontForContentSizeCategory = true
         return label
@@ -64,20 +64,6 @@ class ProfileUserView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-}
-
-// MARK: Public Interface
-extension ProfileUserView {
-    func configureContents(_ data: ProfileUserDataModel) {
-        profileImageView.image = data.profileImage
-        profileNickNameLabel.text = data.profileNickName
-        profileInformationLabel.text = data.profileInformaition
-    }
-}
-
-// MARK: Configure Action
-extension ProfileUserView {
-    
 }
 
 // MARK: Configure UI

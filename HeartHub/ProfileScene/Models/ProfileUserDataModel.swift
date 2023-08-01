@@ -12,10 +12,3 @@ struct ProfileUserDataModel {
     var profileNickName: String
     var profileInformaition: String?
 }
-
-let userProfileMockData = [
-    ProfileUserDataModel(profileImage: UIImage(named: "TestImage"),
-             profileNickName: "HeartHub",
-             profileInformaition: "HeartHub의 프로필 페이지 설명란"
-            )
-]
