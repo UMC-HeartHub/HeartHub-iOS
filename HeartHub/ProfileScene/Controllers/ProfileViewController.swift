@@ -16,14 +16,31 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureUserPostCollectionView()
         configureSubview()
         configureLayout()
     }
 }
 
-// MARK: userPostCollectionView CompositionalLayout Implementation
+// MARK: EnterProfileViewController DataSource Implementation
+extension ProfileViewController: UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+}
+
+
+// MARK: Configure CollectionView
 extension ProfileViewController {
+    private func configureUserPostCollectionView() {
+        userPostCollectionView.dataSource = self
+    }
+        
     private func generateCollectionViewLayout() -> UICollectionViewCompositionalLayout {
         let itemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1/3),
