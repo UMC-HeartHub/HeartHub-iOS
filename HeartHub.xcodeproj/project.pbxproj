@@ -41,6 +41,7 @@
 		56078E2A2A79174A009AEDB7 /* ProfileUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E292A79174A009AEDB7 /* ProfileUserView.swift */; };
 		56078E2C2A7917C2009AEDB7 /* ProfileUserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E2B2A7917C2009AEDB7 /* ProfileUserDataModel.swift */; };
 		56078E2E2A791934009AEDB7 /* ProfileUserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E2D2A791934009AEDB7 /* ProfileUserDataManager.swift */; };
+		56078E302A7926A9009AEDB7 /* ProfileFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078E2F2A7926A9009AEDB7 /* ProfileFloatingButton.swift */; };
 		561462192A6EE50300C0AC1F /* FindIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561462182A6EE50300C0AC1F /* FindIdViewController.swift */; };
 		5626B2D12A57EEB300477EBC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626B2D02A57EEB300477EBC /* LoginViewController.swift */; };
 		5626B3372A584A3D00477EBC /* SignUpStartDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626B3362A584A3D00477EBC /* SignUpStartDateViewController.swift */; };
@@ -103,6 +104,7 @@
 		56078E292A79174A009AEDB7 /* ProfileUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserView.swift; sourceTree = "<group>"; };
 		56078E2B2A7917C2009AEDB7 /* ProfileUserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserDataModel.swift; sourceTree = "<group>"; };
 		56078E2D2A791934009AEDB7 /* ProfileUserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserDataManager.swift; sourceTree = "<group>"; };
+		56078E2F2A7926A9009AEDB7 /* ProfileFloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFloatingButton.swift; sourceTree = "<group>"; };
 		561462182A6EE50300C0AC1F /* FindIdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindIdViewController.swift; sourceTree = "<group>"; };
 		5626B2D02A57EEB300477EBC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5626B3362A584A3D00477EBC /* SignUpStartDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStartDateViewController.swift; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 			children = (
 				56078E212A790369009AEDB7 /* ProfilePostCollectionViewCell.swift */,
 				56078E292A79174A009AEDB7 /* ProfileUserView.swift */,
+				56078E2F2A7926A9009AEDB7 /* ProfileFloatingButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				5626B2D12A57EEB300477EBC /* LoginViewController.swift in Sources */,
 				56348A952A6E87BF005BB635 /* FindPwPopUpViewController.swift in Sources */,
 				561462192A6EE50300C0AC1F /* FindIdViewController.swift in Sources */,
+				56078E302A7926A9009AEDB7 /* ProfileFloatingButton.swift in Sources */,
 				0CC33AC62A5281C1001EF4E7 /* ViewController.swift in Sources */,
 				56078E222A790369009AEDB7 /* ProfilePostCollectionViewCell.swift in Sources */,
 				0C382E332A5C564000EA08E0 /* CommunityCellBottomButtonView.swift in Sources */,

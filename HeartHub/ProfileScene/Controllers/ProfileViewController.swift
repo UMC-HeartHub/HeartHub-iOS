@@ -11,9 +11,9 @@ final class ProfileViewController: UIViewController {
 
     private var userProfileView = ProfileUserView()
     private var userData = ProfileUserDataModel(
-        profileImage: UIImage(named: "PaperPlane"),
+        profileImage: UIImage(named: "TestImage"),
         profileNickName: "하트허브하트허브",
-        profileInformaition: "하트허브의 프로필설명란!"
+        profileInformaition: "하트허브의 프로필설명란"
         )
     private var userDataManager = ProfileUserDataManager()
 
@@ -24,13 +24,16 @@ final class ProfileViewController: UIViewController {
     private var profilePostArray: [ProfilePostDataModel] = []
     private var postDataManager = ProfilePostDataManager()
     
+    private let profileFloatingButton = ProfileFloatingButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUserProfileData()
         configureUserPostCollectionView()
-        
         configureSubview()
         configureLayout()
+        configureFloatingButtonInitialSetting()
+        configureFloatingButtonLayout()
     }
 }
 
@@ -99,6 +102,29 @@ extension ProfileViewController {
     }
 }
 
+// MARK: Configure Floating Button
+extension ProfileViewController {
+    private func configureFloatingButtonInitialSetting() {
+        view.addSubview(profileFloatingButton)
+        profileFloatingButton.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    private func configureFloatingButtonLayout() {
+        let safeArea = view.safeAreaLayoutGuide
+        
+        NSLayoutConstraint.activate([
+            profileFloatingButton.bottomAnchor.constraint(
+                equalTo: safeArea.bottomAnchor,
+                constant: -21
+            ),
+            profileFloatingButton.trailingAnchor.constraint(
+                equalTo: safeArea.trailingAnchor,
+                constant: -21
+            )
+        ])
+    }
+}
+
 // MARK: Configure UI
 extension ProfileViewController {
     private func configureSubview() {
@@ -125,5 +151,21 @@ extension ProfileViewController {
             userPostCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             userPostCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
+    }
+}
+
+// MARK: 프리뷰
+import SwiftUI
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Container().edgesIgnoringSafeArea(.all)
+    }
+    struct Container: UIViewControllerRepresentable {
+        func makeUIViewController(context: Context) -> UIViewController {
+            return     UINavigationController(rootViewController: ProfileViewController())
+        }
+        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        }
+        typealias  UIViewControllerType = UIViewController
     }
 }

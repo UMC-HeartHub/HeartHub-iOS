@@ -12,14 +12,19 @@ final class ProfilePostDataManager {
     
     func configureProfilePostData() {
         postDataArray = [
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon3:3")),
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon1:3")),
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon3:3")),
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon2:3")),
-            ProfilePostDataModel(postImage: UIImage(named: "HeartIcon1:3"))
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage")),
+            ProfilePostDataModel(postImage: UIImage(named: "TestImage"))
         ]
     }
     
