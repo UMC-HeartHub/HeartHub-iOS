@@ -16,6 +16,9 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureSubview()
+        configureLayout()
     }
 }
 
@@ -40,5 +43,26 @@ extension ProfileViewController {
         let layout = UICollectionViewCompositionalLayout(section: section)
         
         return layout
+    }
+}
+
+// MARK: Configure UI
+extension ProfileViewController {
+    private func configureSubview() {
+        [userPostCollectionView,
+        ].forEach {
+            view.addSubview($0)
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+    }
+    
+    private func configureLayout() {
+        NSLayoutConstraint.activate([
+            // MARK: userPostCollectionView Constraints
+            userPostCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
+            userPostCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
+            userPostCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            userPostCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+        ])
     }
 }
