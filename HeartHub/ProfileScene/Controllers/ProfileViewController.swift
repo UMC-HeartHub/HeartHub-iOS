@@ -9,6 +9,13 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
 
+    private let profileBackgroundView: UIImageView = {
+        var imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFill
+        imgView.image = UIImage(named: "ProfileBackground.png")
+        return imgView
+    }()
+    
     private var userProfileView = ProfileUserView()
     private var userData = ProfileUserDataModel(
         profileImage: UIImage(named: "TestImage"),
@@ -128,7 +135,8 @@ extension ProfileViewController {
 // MARK: Configure UI
 extension ProfileViewController {
     private func configureSubview() {
-        [userPostCollectionView,
+        [profileBackgroundView,
+        userPostCollectionView,
          userProfileView
         ].forEach {
             view.addSubview($0)
@@ -138,6 +146,11 @@ extension ProfileViewController {
     
     private func configureLayout() {
         NSLayoutConstraint.activate([
+            profileBackgroundView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            profileBackgroundView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            profileBackgroundView.topAnchor.constraint(equalTo: view.topAnchor),
+            profileBackgroundView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            
             // MARK: userProfileView Constraints
             userProfileView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.32),
             userProfileView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
