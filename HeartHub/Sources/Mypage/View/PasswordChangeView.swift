@@ -21,7 +21,7 @@ final class PasswordChangeView: UIView {
         tf.backgroundColor = .clear
         tf.textColor = #colorLiteral(red: 0.07, green: 0.07, blue: 0.07, alpha: 0.5)
         tf.autocapitalizationType = .none
-
+        
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textViewHeight))
         tf.leftView = paddingView
         tf.leftViewMode = .always
@@ -49,7 +49,7 @@ final class PasswordChangeView: UIView {
         tf.isSecureTextEntry = true
         return tf
     }()
-
+    
     
     private var beforeViewUnderLabel: UILabel = {
         let label = UILabel()
@@ -218,21 +218,21 @@ final class PasswordChangeView: UIView {
         }
     }
     
-
+    
     @objc private func changePassword(sender: UIButton) {
         guard let oldPassword = beforepwdTextField.text,
               let newPassword = newpwdTextField.text else {
             return
         }
         if oldPassword == newPassword {
-                   let alertController = UIAlertController(
-                       title: "비밀번호 변경 완료",
-                       message: "비밀번호 변경이 완료되었습니다.",
-                       preferredStyle: .alert
-                   )
-                   let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
-                   alertController.addAction(okAction)
-                   UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+            let alertController = UIAlertController(
+                title: "비밀번호 변경 완료",
+                message: "비밀번호 변경이 완료되었습니다.",
+                preferredStyle: .alert
+            )
+            let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
         } else {
             let alertController = UIAlertController(
                 title: "비밀번호 불일치",
@@ -243,6 +243,11 @@ final class PasswordChangeView: UIView {
             alertController.addAction(okAction)
             UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        beforepwdTextField.resignFirstResponder()
+        newpwdTextField.resignFirstResponder()
     }
 }
 

@@ -27,27 +27,36 @@ final class LoginViewController: UIViewController {
         loginView.signUpBtn.addTarget(self, action: #selector(didTapSignUpButton), for: .touchUpInside)
         loginView.findPwBtn.addTarget(self, action: #selector(didTapFindPwButton), for: .touchUpInside)
     }
-
+    
     @objc private func didTapLoginButton() {
         print("로그인 버튼이 눌렸습니다.")
         let findPwVC = SignUpTermAgreeViewController()
-       navigationController?.pushViewController(findPwVC, animated: true)
+        navigationController?.pushViewController(findPwVC, animated: true)
     }
     
     @objc private func didTapFindPwButton() {
-         let findPwVC = FindPwViewController()
+        let findPwVC = FindPwViewController()
         navigationController?.pushViewController(findPwVC, animated: true)
-
+        
     }
     
     @objc private func didTapSignUpButton() {
         let signUpVC = SignUpStartDateViewController()
         navigationController?.pushViewController(signUpVC, animated: true)
-
+        
     }
     
     @objc private func didTapFindIdButton() {
         let findIdVC = FindIdViewController()
         navigationController?.pushViewController(findIdVC, animated: true)
+    }
+
+    
+    //MARK: - 회원탈퇴시 넘어가는 함수
+    static func show(from viewController: UIViewController) {
+        let loginViewController = LoginViewController()
+        let navigationController = UINavigationController(rootViewController: loginViewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        viewController.present(navigationController, animated: true, completion: nil)
     }
 }

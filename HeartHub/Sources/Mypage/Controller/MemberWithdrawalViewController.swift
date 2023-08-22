@@ -114,6 +114,8 @@ final class MemberWithdrawalViewController: UIViewController {
         // TODO: 실제 계정 삭제 로직 구현
         // ...
         print("계정이 삭제되었습니다.")
+        LoginViewController.show(from: self)
+
     }
     
     
